@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Canvas 2D Rendering</title>
+</head>
+<body>
+<canvas width="512" height="512"></canvas>
+</body>
+
+<script>
+    const canvas = document.querySelector('canvas');
+    const context = canvas.getContext('2d');
+    const rectSize = [100, 100];
+    context.fillStyle = 'red';
+    context.beginPath();
+    context.rect(0.5*canvas.width, 0.5*canvas.height, ...rectSize);
+    context.fill();
+</script>
+
+</html>
